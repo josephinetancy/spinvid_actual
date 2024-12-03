@@ -939,7 +939,7 @@ p.preloadHighMI = {
     type: jsPsychPreload,
     video: highMIVideoPaths,
     message: `<p>Now loading the wheel... </p> <p> As a reminder, you'll be spinning this wheel: </p><p>${highpreviewWheel}</p> 
-    <p>The wheel will show the following accounts:</p><ul>${highMIDescription.join('')}</p></ul><br>`,
+    <p>The wheel will show the following accounts:</p><ul style="list-style-position: inside; padding-left: 0; margin-left: 0;">${highMIDescription.join('')}</ul></p>`,
     on_success: function(file) {
         console.log('Loaded: ', file);
     },
@@ -965,7 +965,7 @@ p.preloadLowMI = {
         type: jsPsychPreload,
         video: lowMIVideoPaths,
         message: `<p> Now loading the wheel... </p> <p> As a reminder, you'll be spinning this wheel: </p><p>${lowpreviewWheel}<br>
-         <p>The wheel will show the following accounts:</p><ul>${lowMIDescription.join('')}</p>`,
+         <p>The wheel will show the following accounts:</p><ul style="list-style-position: inside; padding-left: 0; margin-left: 0;">${lowMIDescription.join('')}/ul></p>`,
         on_success: function(file) {
             console.log('Loaded: ', file);
     }
@@ -1236,7 +1236,7 @@ p.intro_DescriptionsLow_example3vid = {
     p.save_data = {
         type: jsPsychPipe,
         action: "save",
-        experiment_id: "m8l781TEih2C",
+        experiment_id: "lqqp3mHoyFY2",
         filename: filename,
         data_string: ()=>jsPsych.data.get().csv()
     }; 
